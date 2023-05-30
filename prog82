@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int num, rev = 0, temp;
+    cout << "Введите четырехзначное число: ";
+    cin >> num;
+    temp = num;
+    while (temp != 0) {
+        rev = rev * 10 + temp % 10;
+        temp /= 10;
+    }
+    if (num == rev) {
+        cout << "Данное число читается одинаково слева направо и справа налево";
+    } else {
+        cout << "Данное число не читается одинаково слева направо и справа налево";
+    }
+    return 0;
+}
