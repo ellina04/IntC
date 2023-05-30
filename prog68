@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "Введите два числа: ";
+    cin >> a >> b;
+    if (a % 2 != 0 || b % 2 != 0) {
+        cout << "Хотя бы одно из чисел " << a << " и " << b << " нечетное" << endl;
+    } else {
+        cout << "Оба числа " << a << " и " << b << " четные" << endl;
+    }
+    return 0;
+}
