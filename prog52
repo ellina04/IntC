@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, a, b, c;
+    cout << "Введите трехзначное число: ";
+    cin >> num;
+
+    a = num / 100;
+    b = (num / 10) % 10;
+    c = num % 10;
+
+    cout << "Число, полученное при зачеркивании первой цифры слева и приписывании ее справа: " << b << c << a << endl;
+
+    return 0;
+}
