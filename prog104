@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main() {
+    int month;
+    std::cout << "Введите номер месяца (1-12): ";
+    std::cin >> month;
+
+    if (month >= 1 && month <= 12) {
+        int days;
+        if (month == 2) { // февраль
+            days = 28;
+        } else if (month == 4 || month == 6 || month == 9 || month == 11) { // апрель, июнь, сентябрь, ноябрь
+            days = 30;
+        } else { // все остальные месяцы
+            days = 31;
+        }
+        std::cout << "В этом месяце " << days << " дней." << std::endl;
+    } else {
+        std::cout << "Ошибка! Введите число от 1 до 12." << std::endl;
+    }
+
+    return 0;
+}
