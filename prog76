@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+    cout << "Введите целое положительное число: ";
+    cin >> number;
+    if (number >= 100 && number <= 999 && number % 2 != 0) {
+        cout << "Данное число является нечетным трехзначным" << endl;
+    } else {
+        cout << "Данное число не является нечетным трехзначным" << endl;
+    }
+    return 0;
+}
