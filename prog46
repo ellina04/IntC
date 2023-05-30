@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int num, first, second, sum, product;
+
+    cout << "Введите двузначное число: ";
+    cin >> num;
+
+    first = num / 10; // находим первую цифру
+    second = num % 10; // находим вторую цифру
+
+    sum = first + second; // находим сумму цифр
+    product = first * second; // находим произведение цифр
+
+    cout << "Сумма цифр: " << sum << endl;
+    cout << "Произведение цифр: " << product << endl;
+
+    return 0;
