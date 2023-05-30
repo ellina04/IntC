@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "Введите три числа: ";
+    cin >> a >> b >> c;
+    if (b > a && b < c) {
+        cout << "Число " << b << " находится между числами " << a << " и " << c << endl;
+    } else {
+        cout << "Число " << b << " не находится между числами " << a << " и " << c << endl;
+    }
+    return 0;
+}
