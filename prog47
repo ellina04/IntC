@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Введите двузначное число: ";
+    cin >> n;
+    int a = n / 10; // первая цифра
+    int b = n % 10; // вторая цифра
+    int m = b * 10 + a; // переставленное число
+    cout << "Переставленное число: " << m << endl;
+    return 0;
+}
