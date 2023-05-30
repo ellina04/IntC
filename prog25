@@ -1,0 +1,24 @@
+#include <math.h> 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float A, B, C, x, AC, BC;
+    cout << "Введите число:" << endl;
+    cin >> A;
+    cout << "Введите число:" << endl;
+    cin >> B;
+    cout << "Введите число:" << endl;
+    cin >> C;
+    if ( A < C < B) {
+    AC = A + C;
+    BC = B + C;
+    x = AC * BC;
+    }
+    else 
+    cout << "no" << endl;
+    cout << "Ответ " << AC << ", " <<  BC << "," << x << endl;
+    return 0;
+}
