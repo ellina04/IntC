@@ -1,0 +1,29 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    double a, b, c;
+    cout << "Введите первое число: ";
+    cin >> a;
+    cout << "Введите второе число: ";
+    cin >> b;
+    cout << "Введите третье число: ";
+    cin >> c;
+    
+    if (a <= b && b <= c) {
+        a *= 2;
+        b *= 2;
+        c *= 2;
+    } else {
+        a = -a;
+        b = -b;
+        c = -c;
+    }
+    
+    cout << "Новое значение А: " << a << endl;
+    cout << "Новое значение B: " << b << endl;
+    cout << "Новое значение C: " << c << endl;
+    
+    return 0;
+}
