@@ -1,0 +1,20 @@
+#include <math.h> 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float x1, x2, y1, y2, x;
+    cout << "Введите число:" << endl;
+    cin >> x1;
+    cout << "Введите число:" << endl;
+    cin >> x2;
+    cout << "Введите число:" << endl;
+    cin >> y1;
+    cout << "Введите число:" << endl;
+    cin >> y2;
+    x= sqrt(pow((x2-x1),2)+pow((y2-y1),2));
+    cout << "Ответ " << x << endl;
+    return 0;
+}
