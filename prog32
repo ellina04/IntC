@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+struct Product {
+    string name;
+    float price;
+    int expirationDate;
+};
+
+int main() {
+    vector<Product> products;
+
+    // запрос количества товаров у пользователя
+    int n;
+    cout << "Введите количество товаров: ";
+    cin >> n;
+
+    // добавление товаров в список
+    for (int i = 0; i < n; i++) {
+        Product p;
+        cout << "Введите наименование товара: ";
+        cin >> p.name;
+        cout << "Введите стоимость товара: ";
+        cin >> p.price;
+        cout << "Введите срок годности товара (в днях): ";
+        cin >> p.expirationDate;
+        products.push_back(p);
+    }
+
+    // запрос наименования товара у пользователя
+    string inputName;
+    cout << "Введите наименование товара: ";
+    cin >> inputName;
+
+    // вывод информации о товарах с указанным наименованием
+    bool found = false;
+    for (int i = 0; i < products.size(); i++) {
+        if (products[i].name == inputName) {
+            cout << "Наименование товара: " << products[i].name << endl;
+            cout << "Стоимость товара: " << products[i].price << endl;
+            cout << "Срок годности товара: " << products[i].expirationDate << " дней" << endl;
+            cout << endl;
+            found = true;
+        }
+    }
+
+    // сообщение о том, что товар не найден
+    if (found == false) {
+        cout << "Товар с указанным наименованием не найден." << endl;
+    }
+
+    return 0;
+}
