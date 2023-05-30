@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B;
+    cout << "Введите два числа: ";
+    cin >> A >> B;
+    if (A >= 0 || B < -2) {
+        cout << "Высказывание истинно." << endl;
+    } else {
+        cout << "Высказывание ложно." << endl;
+    }
+    return 0;
+}
