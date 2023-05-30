@@ -1,0 +1,20 @@
+#include <math.h> 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float A, B, C, x, AC, BC;
+    cout << "Введите число:" << endl;
+    cin >> A;
+    cout << "Введите число:" << endl;
+    cin >> B;
+    cout << "Введите число:" << endl;
+    cin >> C;
+    AC = A + C;
+    BC = B + C;
+    x = AC + BC;
+    cout << "Ответ " << AC << ", " <<  BC << "," << x << endl;
+    return 0;
+}
