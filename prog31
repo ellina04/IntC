@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+bool isPalindrome(string str) {
+    int len = str.length();
+    for (int i = 0; i < len / 2; i++) {
+        if (str[i] != str[len - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    string arr[20];
+    int n;
+
+    cout << "Enter the number of strings (max 20): ";
+    cin >> n;
+
+    if (n > 20) {
+        n = 20;
+    }
+
+    cout << "Enter the strings: " << endl;
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "The strings are: " << endl;
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << endl;
+    }
+
+    cout << "Palindromes are: " << endl;
+    for (int i = 0; i < n; i++) {
+        if (isPalindrome(arr[i])) {
+            cout << arr[i] << endl;
+        }
+    }
+
+    return 0;
+}
