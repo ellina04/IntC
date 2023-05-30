@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "Введите три числа: ";
+    cin >> a >> b >> c;
+    int positiveCount = 0;
+    if (a > 0) {
+        positiveCount++;
+    }
+    if (b > 0) {
+        positiveCount++;
+    }
+    if (c > 0) {
+        positiveCount++;
+    }
+    if (positiveCount == 1) {
+        cout << "Ровно одно из чисел А, В, С положительное" << endl;
+    } else {
+        cout << "Не ровно одно из чисел А, В, С положительное" << endl;
+    }
+    return 0;
+}
