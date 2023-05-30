@@ -1,0 +1,18 @@
+#include <math.h> 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b;
+    cout << "Введите вещественное число:" << endl;
+    cin >> a;
+    a = a * a;
+    b = a * a;
+    a = a * b;
+    a = a * 2;
+    cout << "Ответ: " << a << endl;
+
+    return 0;
+}
