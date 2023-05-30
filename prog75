@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+    cout << "Введите целое положительное число: ";
+    cin >> number;
+    if (number >= 10 && number <= 99 && number % 2 == 0) {
+        cout << "Данное число является четным двузначным" << endl;
+    } else {
+        cout << "Данное число не является четным двузначным" << endl;
+    }
+    return 0;
+}
