@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main() {
+    int month;
+    std::cout << "Введите номер месяца (1-12): ";
+    std::cin >> month;
+
+    if (month >= 1 && month <= 12) {
+        if (month >= 3 && month <= 5) {
+            std::cout << "весна" << std::endl;
+        } else if (month >= 6 && month <= 8) {
+            std::cout << "лето" << std::endl;
+        } else if (month >= 9 && month <= 11) {
+            std::cout << "осень" << std::endl;
+        } else {
+            std::cout << "зима" << std::endl;
+        }
+    } else {
+        std::cout << "Ошибка! Введите число от 1 до 12." << std::endl;
+    }
+
+    return 0;
+}
