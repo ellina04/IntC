@@ -1,0 +1,36 @@
+#include <iostream>
+
+int main() {
+    int day;
+    std::cout << "Введите число от 1 до 7: ";
+    std::cin >> day;
+
+    switch (day) {
+        case 1:
+            std::cout << "понедельник" << std::endl;
+            break;
+        case 2:
+            std::cout << "вторник" << std::endl;
+            break;
+        case 3:
+            std::cout << "среда" << std::endl;
+            break;
+        case 4:
+            std::cout << "четверг" << std::endl;
+            break;
+        case 5:
+            std::cout << "пятница" << std::endl;
+            break;
+        case 6:
+            std::cout << "суббота" << std::endl;
+            break;
+        case 7:
+            std::cout << "воскресенье" << std::endl;
+            break;
+        default:
+            std::cout << "Некорректное число" << std::endl;
+            break;
+    }
+
+    return 0;
+}
