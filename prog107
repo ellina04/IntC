@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int unit;
+    double weight;
+
+    cout << "Введите номер единицы массы (1-5): ";
+    cin >> unit;
+
+    cout << "Введите массу тела в выбранных единицах: ";
+    cin >> weight;
+
+    switch (unit) {
+        case 1: // килограмм
+            cout << "Масса тела в килограммах: " << weight << endl;
+            break;
+        case 2: // миллиграмм
+            cout << "Масса тела в килограммах: " << weight / 1000000 << endl;
+            break;
+        case 3: // грамм
+            cout << "Масса тела в килограммах: " << weight / 1000 << endl;
+            break;
+        case 4: // тонна
+            cout << "Масса тела в килограммах: " << weight * 1000 << endl;
+            break;
+        case 5: // центнер
+            cout << "Масса тела в килограммах: " << weight * 100 << endl;
+            break;
+        default:
+            cout << "Некорректный номер единицы массы!" << endl;
+            break;
+    }
+
+    return 0;
+}
