@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "Введите значение a: ";
+    cin >> a;
+    cout << "Введите значение b: ";
+    cin >> b;
+    
+    if (a != b) {
+        if (a > b) {
+            b = a;
+        } else {
+            a = b;
+        }
+    } else {
+        a = 0;
+        b = 0;
+    }
+    
+    cout << "Новое значение a: " << a << endl;
+    cout << "Новое значение b: " << b << endl;
+    
+    return 0;
+}
