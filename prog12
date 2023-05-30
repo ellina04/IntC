@@ -1,0 +1,20 @@
+#include <math.h> 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a, b, x;
+    cout << "Введите число:" << endl;
+    cin >> a;
+    cout << "Введите число:" << endl;
+    cin >> b;
+    if(a==0 && b==0){
+        cout << "Нельзя" << endl;
+    }
+    else 
+        x = a+b;
+    cout << "Ответ" << x << endl;
+    return 0;
+}
