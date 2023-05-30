@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B, C;
+    cout << "Введите три числа: ";
+    cin >> A >> B >> C;
+    if (A < B && B < C) {
+        cout << "Высказывание истинно." << endl;
+    } else {
+        cout << "Высказывание ложно." << endl;
+    }
+    return 0;
+}
