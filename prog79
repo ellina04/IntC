@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Введите трехзначное число: ";
+    cin >> num;
+    int a = num / 100; // первая цифра
+    int b = (num / 10) % 10; // вторая цифра
+    int c = num % 10; // третья цифра
+    if ((a != b) && (b != c) && (a != c)) {
+        cout << "Все цифры данного числа различны" << endl;
+    } else {
+        cout << "Не все цифры данного числа различны" << endl;
+    }
+    return 0;
+}
