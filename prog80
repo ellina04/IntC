@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Введите трехзначное число: ";
+    cin >> num;
+
+    int first = num / 100;
+    int second = (num / 10) % 10;
+    int third = num % 10;
+
+    if (first < second && second < third) {
+        cout << "Цифры данного числа образуют возрастающую последовательность";
+    } else {
+        cout << "Цифры данного числа не образуют возрастающую последовательность";
+    }
+
+    return 0;
+}
