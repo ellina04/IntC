@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, count;
+    cout << "Введите длину отрезка А: ";
+    cin >> a;
+    cout << "Введите длину отрезка В: ";
+    cin >> b;
+    count = a / b;
+    cout << "Количество отрезков В на отрезке А: " << count << endl;
+    return 0;
+}
