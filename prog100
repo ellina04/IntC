@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath> // для использования функции sqrt и pow
+
+int main() {
+    int a, b, c;
+    std::cout << "Введите координату точки A: ";
+    std::cin >> a;
+    std::cout << "Введите координату точки B: ";
+    std::cin >> b;
+    std::cout << "Введите координату точки C: ";
+    std::cin >> c;
+
+    // Вычисляем расстояние от А до В и от А до С
+    int distance_b = abs(b - a);
+    int distance_c = abs(c - a);
+
+    if (distance_b < distance_c) {
+        std::cout << "Точка В ближе к точке А на " << distance_b << std::endl;
+    } else {
+        std::cout << "Точка С ближе к точке А на " << distance_c << std::endl;
+    }
+
+    return 0;
+}
