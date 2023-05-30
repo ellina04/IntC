@@ -1,0 +1,30 @@
+#include <iostream>
+
+int main() {
+    int mark;
+    std::cout << "Введите целое число от 1 до 5: ";
+    std::cin >> mark;
+
+    switch (mark) {
+        case 1:
+            std::cout << "плохо" << std::endl;
+            break;
+        case 2:
+            std::cout << "неудовлетворительно" << std::endl;
+            break;
+        case 3:
+            std::cout << "удовлетворительно" << std::endl;
+            break;
+        case 4:
+            std::cout << "хорошо" << std::endl;
+            break;
+        case 5:
+            std::cout << "отлично" << std::endl;
+            break;
+        default:
+            std::cout << "ошибка" << std::endl;
+            break;
+    }
+
+    return 0;
+}
