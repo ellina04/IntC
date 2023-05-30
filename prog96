@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "Введите первое число: ";
+    cin >> a;
+    cout << "Введите второе число: ";
+    cin >> b;
+    cout << "Введите третье число: ";
+    cin >> c;
+    
+    int min_num = a, max_num = a;
+    
+    if (b < min_num) {
+        min_num = b;
+    } else if (b > max_num) {
+        max_num = b;
+    }
+    
+    if (c < min_num) {
+        min_num = c;
+    } else if (c > max_num) {
+        max_num = c;
+    }
+    
+    cout << "Минимальное число: " << min_num << endl;
+    cout << "Максимальное число: " << max_num << endl;
+    
+    return 0;
+}
