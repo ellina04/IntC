@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a;
+    cout << "Введите число: ";
+    cin >> a;
+    if (a > 0) {
+        cout << "Число " << a << " является положительным." << endl;
+    } else {
+        cout << "Число " << a << " не является положительным." << endl;
+    }
+    return 0;
+}
