@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float Tc, Tk;
+    cout << "Введите значение температуры в градусах Цельсия: ";
+    cin >> Tc;
+    Tk = Tc * 9/5 + 32;
+    cout << "Значение температуры в градусах Фаренгейта: " << Tk << endl;
+    return 0;
+}
