@@ -1,0 +1,19 @@
+#include <math.h> 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b, S, P ;
+    cout << "Введите число:" << endl;
+    cin >> a;
+    cout << "Введите число:" << endl;
+    cin >> b;
+    S = a * b;
+    P = 2*(a+b);
+    cout << "Ответ: " << S << endl;
+    cout << "Ответ: " << P << endl;
+
+    return 0;
+}
