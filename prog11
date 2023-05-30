@@ -1,0 +1,17 @@
+#include <math.h> 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a, b, x;
+    cout << "Введите число:" << endl;
+    cin >> a;
+    cout << "Введите число:" << endl;
+    cin >> b;
+    x = sqrt(a*b);
+    cout << "Ответ: " << x << endl;
+
+    return 0;
+}
