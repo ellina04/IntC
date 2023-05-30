@@ -1,0 +1,15 @@
+#include <math.h> 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, S ;
+    cout << "Введите число:" << endl;
+    cin >> a;
+    S = pow(a,2);
+    cout << "Ответ: " << S << endl;
+
+    return 0;
+}
