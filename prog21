@@ -1,0 +1,23 @@
+#include <math.h> 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float R1, R2, S1, S2, S3, p;
+    cout << "Введите число:" << endl;
+    cin >> R2;
+    cout << "Введите число:" << endl;
+    cin >> R1;
+    p = 3.14;
+    if (R1 < R2)
+        cout << "no" << endl;
+        else 
+            S1 = p*pow(R1,2);
+            S2 = p*pow(R2,2);
+            S3 = S1 - S2;
+    
+    cout << "Ответ " << S1 << ", " <<  S2 << ", " << S3 << endl;
+    return 0;
+}
