@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "Введите три числа: ";
+    cin >> a >> b >> c;
+    if (a > 0 && b > 0 && c > 0) {
+        cout << "Каждое из чисел А, В, С положительное" << endl;
+    } else {
+        cout << "Не все числа А, В, С положительные" << endl;
+    }
+    return 0;
