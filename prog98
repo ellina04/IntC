@@ -1,0 +1,31 @@
+#include <iostream>
+
+int main()
+{
+    double a, b, c;
+    std::cout << "Введите первое число: ";
+    std::cin >> a;
+    std::cout << "Введите второе число: ";
+    std::cin >> b;
+    std::cout << "Введите третье число: ";
+    std::cin >> c;
+
+    if ((a <= b && b <= c) || (a >= b && b >= c))
+    {
+        a *= 2;
+        b *= 2;
+        c *= 2;
+    }
+    else
+    {
+        a = -a;
+        b = -b;
+        c = -c;
+    }
+
+    std::cout << "Новое значение А: " << a << std::endl;
+    std::cout << "Новое значение B: " << b << std::endl;
+    std::cout << "Новое значение C: " << c << std::endl;
+
+    return 0;
+}
