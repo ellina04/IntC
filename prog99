@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main() {
+    int a, b, c;
+    std::cout << "Введите первое число: ";
+    std::cin >> a;
+    std::cout << "Введите второе число: ";
+    std::cin >> b;
+    std::cout << "Введите третье число: ";
+    std::cin >> c;
+    
+    if (a == b && b != c) {
+        std::cout << "3" << std::endl;
+    } else if (a == c && c != b) {
+        std::cout << "2" << std::endl;
+    } else if (b == c && c != a) {
+        std::cout << "1" << std::endl;
+    } else {
+        std::cout << "Нет отличающихся чисел" << std::endl;
+    }
+
+    return 0;
+}
