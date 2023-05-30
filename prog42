@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int fileSize; // объявляем переменную
+
+    cout << "Введите размер файла в байтах: ";
+    cin >> fileSize;
+
+    int kiloBytes = fileSize / 1024; // находим количество полных килобайтов
+
+    cout << "Количество полных килобайтов: " << kiloBytes;
+
+    return 0;
+}
