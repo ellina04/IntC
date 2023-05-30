@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N, hours;
+    cout << "Введите количество секунд, прошедших с начала суток: ";
+    cin >> N;
+
+    hours = N / 3600; // один час равен 3600 секундам
+
+    cout << "Прошло полных часов: " << hours << endl;
+
+    return 0;
+}
