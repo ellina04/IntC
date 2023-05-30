@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int unit;
+    double length;
+    cout << "Введите номер единицы длины (1-5): ";
+    cin >> unit;
+    cout << "Введите длину отрезка в выбранных единицах: ";
+    cin >> length;
+    double meters;
+    switch (unit) {
+        case 1:
+            meters = length / 10;
+            break;
+        case 2:
+            meters = length * 1000;
+            break;
+        case 3:
+            meters = length;
+            break;
+        case 4:
+            meters = length / 1000;
+            break;
+        case 5:
+            meters = length / 100;
+            break;
+        default:
+            cout << "Ошибка: неверный номер единицы длины." << endl;
+            return 1;
+    }
+    cout << "Длина отрезка в метрах: " << meters << endl;
+    return 0;
+}
