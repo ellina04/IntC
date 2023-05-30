@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int num, first, second, third;
+    bool isIncreasing = false, isDecreasing = false;
+
+    cout << "Введите трехзначное число: ";
+    cin >> num;
+
+    // Разделение числа на цифры
+    first = num / 100;
+    second = (num / 10) % 10;
+    third = num % 10;
+
+    // Проверка на возрастающую последовательность
+    if (first < second && second < third) {
+        isIncreasing = true;
+    }
+
+    // Проверка на убывающую последовательность
+    if (first > second && second > third) {
+        isDecreasing = true;
+    }
+
+    // Вывод результата проверки
+    if (isIncreasing || isDecreasing) {
+        cout << "Цифры данного числа образуют возрастающую или убывающую последовательность" << endl;
+    } else {
+        cout << "Цифры данного числа не образуют возрастающую или убывающую последовательность" << endl;
+    }
+
+    return 0;
+}
+```
