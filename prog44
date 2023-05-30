@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "Введите длину отрезка A: ";
+    cin >> a;
+    cout << "Введите длину отрезка B (B < A): ";
+    cin >> b;
+
+    int unused = a % b;
+    cout << "Длина незанятой части отрезка A: " << unused << endl;
+
+    return 0;
+}
