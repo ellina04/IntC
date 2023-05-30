@@ -1,0 +1,16 @@
+#include <math.h> 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float L, S, p, D;
+    cout << "Введите число:" << endl;
+    cin >> D;
+    p = 3.14;
+    L = p*D;
+    S = (p* pow(D,2))/4;
+    cout << "Ответ " << S << ", " <<  L << endl;
+    return 0;
+}
