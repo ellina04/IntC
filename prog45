@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, tens, ones;
+    cout << "Введите двузначное число: ";
+    cin >> num;
+    tens = num / 10; // находим десятки
+    ones = num % 10; // находим единицы
+    cout << "Десятки: " << tens << endl;
+    cout << "Единицы: " << ones << endl;
+    return 0;
+}
