@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int d, m;
+    cout << "Введите день и месяц: ";
+    cin >> d >> m;
+
+    // проверка на корректность введенных данных
+    if (m < 1  m > 12  d < 1  d > 31) {
+        cout << "Некорректная дата" << endl;
+        return 0;
+    }
+
+    // определяем количество дней в месяце
+    int days_in_month;
+    if (m == 2) {
+        days_in_month = 28;
+    } else if (m == 4  m == 6  m == 9  m == 11) {
+        days_in_month = 30;
+    } else {
+        days_in_month = 31;
+    }
+
+    // проверка на корректность дня в месяце
+    if (d > days_in_month) {
+        cout << "Некорректный день" << endl;
+        return 0;
+    }
+
+    // определяем следующую дату
+    if (d == days_in_month) {
+        d = 1;
+        m++;
+    } else {
+        d++;
+    }
+
+    // выводим результат
+    cout << "Следующая дата: " << d << "." << m << endl;
+
+    return 0;
+}
