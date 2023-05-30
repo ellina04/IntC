@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int K;
+    cout << "Введите номер дня года (1-365): ";
+    cin >> K;
+
+    int dayOfWeek = (K + 0) % 7; // вычисляем остаток от деления на 7, чтобы определить номер дня недели
+    cout << "Номер дня недели для " << K << "-го дня года: " << dayOfWeek << endl;
+
+    return 0;
+}
