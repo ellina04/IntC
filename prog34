@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double x, a, price1kg, priceYkg;
+    int y;
+    cout << "Введите количество кг конфет (X): ";
+    cin >> x;
+    cout << "Введите стоимость конфет (A): ";
+    cin >> a;
+    cout << "Введите количество кг конфет (Y): ";
+    cin >> y;
+    price1kg = a / x;
+    priceYkg = price1kg * y;
+    cout << "Цена 1 кг конфет: " << price1kg << " руб." << endl;
+    cout << "Цена " << y << " кг конфет: " << priceYkg << " руб." << endl;
+    return 0;
+}
